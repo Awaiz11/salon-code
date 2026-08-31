@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Jost", "Avenir Next", "Segoe UI", sans-serif;
+
+  --color-ink: #2b2128;
+  --color-coal: #241b21;
+  --color-cocoa: #382c35;
+  --color-gold: #c3a05f;
+  --color-golddark: #a9853f;
+  --color-cream: #f6f1e7;
+  --color-cream2: #f1ead9;
+  --color-sand: #f0e8d7;
+  --color-line: #e5dbc9;
+  --color-body: #6f675e;
+  --color-mist: #a9a093;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f1e7;
+  color: #2b2128;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- component classes ---------- */
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #c3a05f;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #c3a05f;
+  color: #2b2128;
+  border-radius: 6px;
+  padding: 13px 26px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-gold:hover {
+  background: #a9853f;
+  color: #fff;
+}
+.btn-gold:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #c3a05f;
+  color: #8a6d33;
+  border-radius: 6px;
+  padding: 13px 26px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-line:hover {
+  background: #c3a05f;
+  color: #2b2128;
+}
+
+.btn-line-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+  border-radius: 6px;
+  padding: 13px 26px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-line-light:hover {
+  border-color: #c3a05f;
+  color: #c3a05f;
+}
+
+.input-luxe {
+  width: 100%;
+  background: #f6f1e7;
+  border: 1px solid #e5dbc9;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #2b2128;
+  font-family: var(--font-sans);
+}
+.input-luxe::placeholder {
+  color: #a9a093;
+}
+.input-luxe:focus {
+  outline: none;
+  border-color: #c3a05f;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
