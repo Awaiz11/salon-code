@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -50,6 +51,7 @@ export default function App() {
       <Header route={route} />
       <main className="flex-1">{page}</main>
       <Footer />
+      <ThemeSwitcher />
     </div>
   );
 }
