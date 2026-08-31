@@ -7,24 +7,24 @@ const INFO = [
   {
     icon: IconPin,
     title: "Visit Us",
-    lines: ["Building 44-CCA, Phase 5 DHA", "Lahore, Punjab, Pakistan"],
+    lines: ["450 N Canon Dr, Suite 200", "Beverly Hills, CA 90210, USA"],
   },
   {
     icon: IconPhone,
     title: "Call Us",
-    lines: ["+92 42 35123456", "+92 300 1234567"],
+    lines: ["+1 (310) 555-0199", "+1 (310) 555-0144"],
   },
   {
     icon: IconMail,
     title: "Email Us",
-    lines: ["appointments@luxehaven.pk", "info@luxehaven.pk"],
+    lines: ["appointments@luxehaven.com", "info@luxehaven.com"],
   },
 ];
 
 const HOURS = [
-  { day: "Monday – Friday", time: "11:00 AM – 9:00 PM" },
-  { day: "Saturday", time: "10:00 AM – 10:00 PM" },
-  { day: "Sunday", time: "12:00 PM – 8:00 PM" },
+  { day: "Monday – Friday", time: "9:00 AM – 8:00 PM" },
+  { day: "Saturday", time: "9:00 AM – 7:00 PM" },
+  { day: "Sunday", time: "10:00 AM – 6:00 PM" },
 ];
 
 export default function Contact() {
@@ -78,7 +78,7 @@ export default function Contact() {
           <SectionHead
             eyebrow="Send a Message"
             title="We're Here to Help"
-            sub="Fill in the form below and our team will get back to you within 24 hours."
+            sub="Fill in the form below and our concierge team will get back to you within 24 hours."
           />
 
           <div className="mt-14 grid items-start gap-12 lg:grid-cols-[1.4fr_0.6fr]">
@@ -104,7 +104,7 @@ export default function Contact() {
                     Thank You!
                   </h3>
                   <p className="mt-3 max-w-sm text-[14px] leading-relaxed text-body">
-                    Your message has been received. Our team will get back to
+                    Your message has been received. Our concierge team will get back to
                     you within 24 hours.
                   </p>
                   <button
@@ -128,7 +128,7 @@ export default function Contact() {
                       </label>
                       <input
                         type="text"
-                        placeholder="e.g. Fatima Shah"
+                        placeholder="e.g. Victoria Sterling"
                         className="input-luxe"
                         required
                       />
@@ -150,7 +150,7 @@ export default function Contact() {
                       </label>
                       <input
                         type="tel"
-                        placeholder="+92 300 0000000"
+                        placeholder="+1 (310) 555-0199"
                         className="input-luxe"
                       />
                     </div>
@@ -161,9 +161,9 @@ export default function Contact() {
                       <select className="input-luxe" required>
                         <option value="">Select a topic</option>
                         <option>Appointment Inquiry</option>
-                        <option>Bridal Package</option>
+                        <option>Bridal Couture Package</option>
                         <option>Membership Query</option>
-                        <option>Feedback</option>
+                        <option>Private Suite Booking</option>
                         <option>General Inquiry</option>
                       </select>
                     </div>
@@ -213,7 +213,7 @@ export default function Contact() {
                 <span className="mt-2 block h-px w-10 bg-gold" />
                 <p className="mt-4 text-[13.5px] leading-relaxed text-body">
                   Skip the wait — book your appointment directly through our
-                  online system for instant confirmation.
+                  online system for instant priority confirmation.
                 </p>
                 <a href="#/booking" className="btn-gold mt-6 w-full">
                   Book Appointment
@@ -230,12 +230,12 @@ export default function Contact() {
           <SectionHead
             eyebrow="Find Us"
             title="Our Location"
-            sub="Conveniently situated in the heart of DHA Phase 5, Lahore — easily accessible with ample parking."
+            sub="Conveniently situated on Canon Drive in the heart of Beverly Hills, CA — with dedicated valet and reserved parking."
           />
           <div className="mt-14 overflow-hidden rounded-xl border border-line shadow-[0_18px_40px_-22px_rgba(43,33,40,0.25)]">
             <iframe
               title="Luxe Haven Salon Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.555!2d74.3587!3d31.4697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI4JzEwLjkiTiA3NMKwMjEnMzEuMyJF!5e0!3m2!1sen!2spk!4v1"
+              src="https://maps.google.com/maps?q=450+N+Canon+Dr,+Beverly+Hills,+CA+90210&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="420"
               style={{ border: 0 }}
@@ -256,7 +256,7 @@ export default function Contact() {
           </h2>
           <p className="mx-auto mt-5 max-w-md text-[14px] leading-relaxed text-white/65">
             Reserve your priority appointment today. Enjoy customized
-            consultation and zero waiting times at DHA Phase 5, Lahore.
+            consultation and zero waiting times at Beverly Hills, CA.
           </p>
           <a href="#/booking" className="btn-gold mt-9">
             Book Your Visit Today

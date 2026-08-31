@@ -18,21 +18,21 @@ const STEPS = [
 ];
 
 const ADDONS = [
-  { title: "Deep Conditioning", text: "Ultra-concentrated restorative lipid wrap to fortify ends and deliver unmatched moisture.", price: "PKR 2,500" },
-  { title: "Scalp Massage Ritual", text: "15-minute soothing reflexology session with cold-pressed organic lavender oils.", price: "PKR 1,500" },
-  { title: "Signature Blow Dry", text: "Ultimate custom style finish leaving your hair runway-ready with perfect root lift.", price: "PKR 2,000" },
+  { title: "Deep Conditioning", text: "Ultra-concentrated restorative lipid wrap to fortify ends and deliver unmatched moisture.", price: "$45" },
+  { title: "Scalp Massage Ritual", text: "15-minute soothing reflexology session with cold-pressed organic lavender oils.", price: "$35" },
+  { title: "Signature Blow Dry", text: "Ultimate custom style finish leaving your hair runway-ready with perfect root lift.", price: "$50" },
 ];
 
 const ARTISTS = [
-  { img: IMG.artisanAmna, name: "Amna Shah", role: "Senior Bridal & Hair Expert" },
-  { img: IMG.artisanYousuf, name: "Yousuf Khan", role: "Master Barber & Stylist" },
-  { img: IMG.artisanSarah, name: "Sarah Joseph", role: "Holistic Hair Therapist" },
+  { img: IMG.artisanAmna, name: "Elena Vance", role: "Creative Director & Hair Artist" },
+  { img: IMG.artisanYousuf, name: "Marcus Hayes", role: "Master Hair Colorist & Stylist" },
+  { img: IMG.artisanSarah, name: "Sarah Joseph", role: "Holistic Hair Specialist" },
 ];
 
 const RELATED = [
-  { img: IMG.relatedOlaplex, title: "Parisian Olaplex Bond Repair", price: "PKR 12,000" },
-  { img: IMG.relatedDetox, title: "Organic Rosemary Scalp Detox", price: "PKR 8,500" },
-  { img: IMG.relatedGloss, title: "Luxe Anti-Humidity Gloss Seal", price: "PKR 15,000" },
+  { img: IMG.relatedOlaplex, title: "Parisian Olaplex Bond Repair", price: "$165" },
+  { img: IMG.relatedDetox, title: "Organic Rosemary Scalp Detox", price: "$110" },
+  { img: IMG.relatedGloss, title: "Luxe Anti-Humidity Gloss Seal", price: "$195" },
 ];
 
 export default function ServiceDetail() {
@@ -68,15 +68,15 @@ export default function ServiceDetail() {
                 <span className="text-[12px] font-semibold text-body">4.9</span>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-4">
-                <p className="font-serif text-3xl font-bold text-gold">PKR 18,000</p>
+                <p className="font-serif text-3xl font-bold text-gold">$280</p>
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-[11.5px] text-body">
                   <IconClock className="h-3.5 w-3.5 text-golddark" /> 120 min
                 </span>
               </div>
               <p className="mt-6 max-w-lg text-[14px] leading-relaxed text-body">
                 Our signature premium keratin blowout reconstructs protein bonds to restore vibrant health,
-                mirror-shine, and lightweight flow. Specifically calibrated to combat Lahore's unique humidity frizz
-                profiles.
+                mirror-shine, and lightweight flow. Specifically calibrated to eliminate environmental frizz
+                and seal split ends.
               </p>
               <a href="#/booking" className="btn-gold mt-8 w-fit">Book This Service</a>
             </div>

@@ -15,7 +15,7 @@ const services = [
   "Calming Spa Therapies",
   "Advanced Skincare",
   "Bespoke Bridal Styling",
-  "Halal Pedicures",
+  "Organic Botanical Pedicures",
 ];
 
 export default function Footer() {
@@ -27,7 +27,7 @@ export default function Footer() {
             <p className="font-serif text-2xl font-bold tracking-[0.1em] text-gold">LUXE HAVEN</p>
             <p className="mt-1 text-[9px] font-medium tracking-[0.4em] text-white/40">SALON &amp; SPA</p>
             <p className="mt-6 max-w-xs text-[13px] leading-relaxed">
-              Lahore's sanctuary of bespoke elegance, where traditional hospitality meets global beauty standards.
+              Beverly Hills' sanctuary of bespoke elegance, where timeless artistry meets state-of-the-art beauty innovations.
               Experience hair, skin, and bridal refinement like never before.
             </p>
             <div className="mt-6 flex gap-3">
@@ -75,18 +75,18 @@ export default function Footer() {
             <ul className="mt-5 space-y-4 text-[13px]">
               <li className="flex gap-3">
                 <IconPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>Building 44-CCA, Phase 5 DHA, Lahore, Pakistan</span>
+                <span>450 N Canon Dr, Beverly Hills, CA 90210, USA</span>
               </li>
               <li className="flex gap-3">
                 <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <span>
-                  +92 42 35123456 <span className="text-white/25">|</span> +92 300 1234567
+                  +1 (310) 555-0199 <span className="text-white/25">|</span> +1 (310) 555-0144
                 </span>
               </li>
               <li className="flex gap-3">
                 <IconMail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <a href="mailto:appointments@luxehaven.pk" className="transition hover:text-gold">
-                  appointments@luxehaven.pk
+                <a href="mailto:appointments@luxehaven.com" className="transition hover:text-gold">
+                  appointments@luxehaven.com
                 </a>
               </li>
             </ul>

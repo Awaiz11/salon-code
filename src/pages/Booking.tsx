@@ -177,7 +177,7 @@ export default function Booking() {
                       </div>
                       <div>
                         <label className="mb-1.5 block text-[12px] font-semibold text-ink">Phone Number</label>
-                        <input className="input-luxe" placeholder="+92 300 1234567" />
+                        <input className="input-luxe" placeholder="+1 (310) 555-0199" />
                       </div>
                       <div className="sm:col-span-2">
                         <label className="mb-1.5 block text-[12px] font-semibold text-ink">Email Address</label>
@@ -206,7 +206,7 @@ export default function Booking() {
                   </div>
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-white/45">Your Stylist</p>
-                    <p className="mt-1 text-[15px] font-medium">Amna Shah</p>
+                    <p className="mt-1 text-[15px] font-medium">Elena Vance</p>
                   </div>
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-white/45">Appointment Schedule</p>
@@ -217,7 +217,7 @@ export default function Booking() {
                 </div>
                 <div className="mt-6 flex items-center justify-between border-t border-white/15 pt-5">
                   <p className="text-[15px] font-medium">Total Amount</p>
-                  <p className="font-serif text-2xl font-bold text-gold">PKR 18,000</p>
+                  <p className="font-serif text-2xl font-bold text-gold">$280</p>
                 </div>
                 <button onClick={() => setStep(step === 3 ? 4 : 5)} className="btn-gold mt-6 w-full">
                   {step === 3 ? "Continue to Details" : "Confirm Booking"}
@@ -242,7 +242,7 @@ export default function Booking() {
                   </div>
                   <div className="flex items-center justify-between gap-4 px-5 py-3.5">
                     <span className="text-[12.5px] text-body">Service:</span>
-                    <span className="text-[13px] font-bold text-ink">Premium Keratin Blowout (Amna Shah)</span>
+                    <span className="text-[13px] font-bold text-ink">Premium Keratin Blowout (Elena Vance)</span>
                   </div>
                   <div className="flex items-center justify-between gap-4 px-5 py-3.5">
                     <span className="text-[12.5px] text-body">Date &amp; Time:</span>
@@ -250,12 +250,12 @@ export default function Booking() {
                   </div>
                 </div>
                 <p className="mx-auto mt-6 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-[12px] font-medium text-emerald-600">
-                  <IconCheck className="h-3.5 w-3.5" /> WhatsApp reminder sent successfully
+                  <IconCheck className="h-3.5 w-3.5" /> SMS &amp; Email reminder sent successfully
                 </p>
                 <div className="mt-7 flex flex-wrap justify-center gap-4">
                   <a
                     download="luxe-haven-appointment.ics"
-                    href={`data:text/calendar;charset=utf-8,BEGIN:VCALENDAR VERSION:2.0 BEGIN:VEVENT SUMMARY:Luxe Haven - Premium Keratin Blowout (Amna Shah) DTSTART:20261014T103000 DURATION:PT2H0M0S LOCATION:Building 44-CCA\\, Phase 5 DHA\\, Lahore END:VEVENT END:VCALENDAR`}
+                    href={`data:text/calendar;charset=utf-8,BEGIN:VCALENDAR VERSION:2.0 BEGIN:VEVENT SUMMARY:Luxe Haven - Premium Keratin Blowout (Elena Vance) DTSTART:20261014T103000 DURATION:PT2H0M0S LOCATION:450 N Canon Dr\\, Beverly Hills\\, CA 90210 END:VEVENT END:VCALENDAR`}
                     className="btn-line"
                   >
                     Add to Calendar

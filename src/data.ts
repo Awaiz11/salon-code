@@ -111,8 +111,7 @@ export const HOME_PREVIEWS = [
   },
   {
     img: IMG.previewNail,
-    icon: "palette",
-    title: "Luxury Nail Artistry",
+    icon: "palette",    title: "Luxury Nail Artistry",
     text: "Pamper your nails with elite OPI gel sets, bespoke custom geometric hand-drawn art, and revitalizing organic rose-milk manicures.",
   },
   {
@@ -125,7 +124,7 @@ export const HOME_PREVIEWS = [
     img: IMG.previewBridal,
     icon: "gem",
     title: "Bespoke Bridal",
-    text: "Timeless glow for the elegant Pakistani bride. Flawless contouring, luxury skin-prep, and traditional dupatta pinning precision.",
+    text: "Timeless elegance for the modern bride. Flawless contouring, luxury skin-prep, and couture veil & hair sculpting precision.",
   },
 ];
 
@@ -133,7 +132,7 @@ export const LUXE_CARDS = [
   {
     icon: "award",
     title: "Expert Certified Stylists",
-    text: "Our colorists and master therapists undergo regular global training from Paris & London, specializing in local South Asian hair and skin profiles.",
+    text: "Our colorists and master therapists undergo regular global training from Paris & New York, specializing in bespoke couture hair and skin profiles.",
   },
   {
     icon: "droplet",
@@ -142,31 +141,31 @@ export const LUXE_CARDS = [
   },
   {
     icon: "shield",
-    title: "Sterile & Sterilized Sanctuary",
-    text: "A beautifully curated safe space. Each private room is fitted with advanced air filters, acoustic calming music, and pristine soft linens.",
+    title: "Sterile & Clean Sanctuary",
+    text: "A beautifully curated safe space. Each private room is fitted with advanced HEPA air filtration, calming acoustics, and pristine organic linens.",
   },
 ];
 
 export const MASTERS = [
   {
     img: IMG.artisanAmna,
-    name: "Amna Shah",
-    role: "Senior Bridal Makeup Specialist",
-    text: "12+ years masterfully contouring Pakistani brides, trained at Paris Academy.",
-    cta: "Book with Amna",
+    name: "Elena Vance",
+    role: "Creative Director & Lead Bridal Artist",
+    text: "12+ years masterfully styling celebrity & couture brides, trained at Paris Academy.",
+    cta: "Book with Elena",
   },
   {
     img: IMG.artisanYousuf,
-    name: "Yousuf Khan",
+    name: "Marcus Hayes",
     role: "Master Hair Colorist & Stylist",
-    text: "Balayage specialist and Kérastase certified professional.",
-    cta: "Book with Yousuf",
+    text: "Balayage specialist and Kérastase certified professional with New York salon pedigree.",
+    cta: "Book with Marcus",
   },
   {
     img: IMG.artisanSarah,
     name: "Sarah Joseph",
-    role: "Holistic Skin & Spa Expert",
-    text: "Over 8 years crafting bespoke herbal therapies and glow skin facials.",
+    role: "Holistic Skin & Spa Specialist",
+    text: "Over 8 years crafting bespoke botanical therapies and clinical glow facials.",
     cta: "Book with Sarah",
   },
 ];
@@ -174,23 +173,23 @@ export const MASTERS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Finding a salon that understands both modern global hair techniques and our rich Pakistani bridal traditions was impossible until I found Luxe Haven. Amna's makeup stayed fresh through a humid 8-hour outdoor walima, and the private spa rooms are truly therapeutic. The ultimate beauty standard in DHA Lahore.",
-    name: "Zainab Malik",
-    role: "Bridal Client · DHA Phase 5",
+      "Finding a salon that balances contemporary hair artistry with calming holistic care seemed impossible until I found Luxe Haven. Elena's bridal styling lasted flawlessly through our entire reception, and the private spa suites are unmatched. The gold standard in Beverly Hills.",
+    name: "Victoria Sterling",
+    role: "Bridal Client · Beverly Hills",
     avatar: IMG.avatarZainab,
   },
   {
     quote:
-      "The sterilization standards here are unmatched. Surgical-grade hygiene paired with that warm, unhurried service — my monthly facial with Sarah Joseph has become the anchor of my month. DHA has never seen anything quite like it.",
-    name: "Ayesha Raza",
-    role: "Luxe Membership · 2 Years",
+      "The clinical cleanliness standards here are exceptional. Surgical-grade hygiene paired with that warm, unhurried service — my monthly facial with Sarah Joseph has become the highlight of my routine. Nothing in Los Angeles compares.",
+    name: "Claire Davenport",
+    role: "Luxe Member · 2 Years",
     avatar: IMG.avatarZainab,
   },
   {
     quote:
-      "My keratin blowout survived a full Lahore monsoon without a single frizz. Yousuf understood my hair history better than I did, and the aftercare guidance was precise. Worth every rupee of the PKR 18,000 investment.",
-    name: "Fatima Noor",
-    role: "Client · DHA Phase 5",
+      "My keratin blowout survived the coastal humidity without a single frizz. Marcus understood my hair profile better than anyone before, and the aftercare regimen was precise. Worth every penny of the $280 investment.",
+    name: "Olivia Chen",
+    role: "Client · West Hollywood",
     avatar: IMG.avatarZainab,
   },
 ];
@@ -215,57 +214,57 @@ export const SERVICE_TABS: { id: string; label: string; items: Service[] }[] = [
     id: "hair",
     label: "Hair Care",
     items: [
-      { img: IMG.svcCut, time: "60 min", price: "PKR 5,500", title: "Luxury Hair Cut & Style", text: "Customized hair architecture by master stylist. Includes priority consultation, deep relaxing rose-milk wash, and custom blow-dry." },
-      { img: IMG.svcKeratin, time: "120 min", price: "PKR 18,000", title: "Keratin Smooth Treatment", text: "Restore structure to color-treated locks. Eliminates frizz completely while preserving rich natural volume and flow." },
-      { img: IMG.svcBalayage, time: "180 min", price: "PKR 25,000", title: "Balayage & Custom Highlights", text: "Artisanal hand-painted sun-kissed French balayage blending premium non-bleach formulas safe for delicate hair profiles." },
-      { img: IMG.svcDeep, time: "45 min", price: "PKR 4,500", title: "Deep Conditioning Kérastase", text: "An intensive nutritive repair masque customized to lock moisture deep inside weak, heat-damaged and dry cuticles." },
-      { img: IMG.svcBridalHair, time: "90 min", price: "PKR 15,000", title: "Elite Bridal Hair Sculpting", text: "Customized structure matching your royal dupatta and traditional jewelry weight. Includes priority prep trial sessions." },
-      { img: IMG.svcScalp, time: "30 min", price: "PKR 3,000", title: "Scalp Therapy & Massage", text: "Advanced scalp micro-peel formulation paired with a revitalizing pressure-point Indian head massage using warm botanical oils." },
+      { img: IMG.svcCut, time: "60 min", price: "$95", title: "Luxury Hair Cut & Style", text: "Customized hair architecture by master stylist. Includes priority consultation, deep relaxing rose-milk wash, and custom blow-dry." },
+      { img: IMG.svcKeratin, time: "120 min", price: "$280", title: "Keratin Smooth Treatment", text: "Restore structure to color-treated locks. Eliminates frizz completely while preserving rich natural volume and flow." },
+      { img: IMG.svcBalayage, time: "180 min", price: "$320", title: "Balayage & Custom Highlights", text: "Artisanal hand-painted French balayage blending premium ammonia-free formulas safe for delicate hair profiles." },
+      { img: IMG.svcDeep, time: "45 min", price: "$75", title: "Deep Conditioning Kérastase", text: "An intensive nutritive repair masque customized to lock moisture deep inside weak, heat-damaged and dry cuticles." },
+      { img: IMG.svcBridalHair, time: "90 min", price: "$220", title: "Elite Bridal Hair Sculpting", text: "Customized structure matching your gown neckline and heirloom headpiece. Includes priority trial session." },
+      { img: IMG.svcScalp, time: "30 min", price: "$65", title: "Scalp Therapy & Massage", text: "Advanced scalp micro-peel formulation paired with a revitalizing pressure-point head massage using warm botanical oils." },
     ],
   },
   {
     id: "nail",
     label: "Nail Artistry",
     items: [
-      { img: IMG.svcNail1, time: "45 min", price: "PKR 4,000", title: "Signature OPI Gel Manicure", text: "Elite OPI gel sets with flawless cuticle sculpting and a mirror-shine top seal, durable and safe for weeks." },
-      { img: IMG.svcNail2, time: "60 min", price: "PKR 6,500", title: "Custom Geometric Nail Artistry", text: "Bespoke hand-painted geometric patterns designed with you, finished in premium non-toxic pigments." },
-      { img: IMG.svcNail3, time: "75 min", price: "PKR 8,500", title: "Rose-Milk Spa Mani-Pedi", text: "Revitalizing organic rose-milk immersion, herbal peel, and hot-stone relaxation for complete hand and foot care." },
+      { img: IMG.svcNail1, time: "45 min", price: "$60", title: "Signature OPI Gel Manicure", text: "Elite OPI gel sets with flawless cuticle sculpting and a mirror-shine top seal, durable and safe for weeks." },
+      { img: IMG.svcNail2, time: "60 min", price: "$85", title: "Custom Geometric Nail Artistry", text: "Bespoke hand-painted geometric patterns designed with you, finished in premium non-toxic pigments." },
+      { img: IMG.svcNail3, time: "75 min", price: "$110", title: "Rose-Milk Spa Mani-Pedi", text: "Revitalizing organic rose-milk immersion, herbal peel, and hot-stone relaxation for complete hand and foot care." },
     ],
   },
   {
     id: "spa",
     label: "Spa & Wellness",
     items: [
-      { img: IMG.svcSpa1, time: "60 min", price: "PKR 10,000", title: "Swedish Full-Body Luxury Release", text: "Long, flowing pressure strokes with warm botanical oils to melt metropolitan tension from the shoulders down." },
-      { img: IMG.svcSpa2, time: "45 min", price: "PKR 7,500", title: "Aromatherapy Decompression Ritual", text: "Essential-oil diffusion paired with slow rhythmic massage in a private acoustically softened suite." },
-      { img: IMG.svcSpa3, time: "50 min", price: "PKR 9,000", title: "Herbal Body Polish & Rose Bath", text: "Cold-pressed herbal sugar scrub followed by a petal-infused rose immersion to soften and revive skin." },
+      { img: IMG.svcSpa1, time: "60 min", price: "$160", title: "Swedish Full-Body Luxury Release", text: "Long, flowing pressure strokes with warm botanical oils to melt metropolitan tension from the shoulders down." },
+      { img: IMG.svcSpa2, time: "45 min", price: "$140", title: "Aromatherapy Decompression Ritual", text: "Essential-oil diffusion paired with slow rhythmic massage in a private acoustically softened suite." },
+      { img: IMG.svcSpa3, time: "50 min", price: "$150", title: "Herbal Body Polish & Rose Bath", text: "Cold-pressed herbal sugar scrub followed by a petal-infused rose immersion to soften and revive skin." },
     ],
   },
   {
     id: "clinical",
     label: "Clinical Skin Care",
     items: [
-      { img: IMG.svcClin1, time: "60 min", price: "PKR 12,000", title: "Dermalogica Deep Clarifying Facial", text: "Clinically calibrated Dermalogica protocol targeting congestion, tone and luminosity for South Asian skin." },
-      { img: IMG.svcClin2, time: "40 min", price: "PKR 9,500", title: "Halal-First LED Glow Therapy", text: "Gentle light therapy with certified halal actives to boost collagen and calm reactive skin." },
-      { img: IMG.svcClin3, time: "30 min", price: "PKR 3,000", title: "Scalp Micro-Peel & Detox", text: "A restorative micro-peel that clears build-up and re-energizes follicles before any major color work." },
+      { img: IMG.svcClin1, time: "60 min", price: "$175", title: "Dermalogica Deep Clarifying Facial", text: "Clinically calibrated Dermalogica protocol targeting congestion, tone and luminosity for radiant, clear skin." },
+      { img: IMG.svcClin2, time: "40 min", price: "$145", title: "Clinical LED Glow Therapy", text: "Gentle multi-spectrum light therapy with clean peptide actives to boost collagen and calm reactive skin." },
+      { img: IMG.svcClin3, time: "30 min", price: "$75", title: "Scalp Micro-Peel & Detox", text: "A restorative micro-peel that clears build-up and re-energizes follicles before any major color work." },
     ],
   },
   {
     id: "bridal",
     label: "Bespoke Bridal",
     items: [
-      { img: IMG.svcBrid1, time: "90 min", price: "PKR 25,000", title: "HD Bridal Makeup & Lashes", text: "Camera-perfect HD contouring with luxury lashes, built to last through an entire Lahore wedding day." },
-      { img: IMG.svcBrid2, time: "60 min", price: "PKR 15,000", title: "Couture Bridal Hair Draping", text: "Regal updos and dupatta pinning engineered for traditional jewelry weight and eight-hour endurance." },
-      { img: IMG.svcBrid3, time: "6 sessions", price: "PKR 45,000", title: "Pre-Bridal European Facial Series", text: "A six-week clinical journey of facials, peels and glow therapies that culminates on your wedding morning." },
+      { img: IMG.svcBrid1, time: "90 min", price: "$350", title: "HD Bridal Makeup & Lashes", text: "Camera-perfect HD contouring with luxury silk lashes, engineered to last effortlessly through your wedding day." },
+      { img: IMG.svcBrid2, time: "60 min", price: "$240", title: "Couture Bridal Hair & Veil Styling", text: "Regal updos and veil placement engineered for headpiece security and all-day comfort." },
+      { img: IMG.svcBrid3, time: "6 sessions", price: "$650", title: "Pre-Bridal European Facial Series", text: "A six-week clinical journey of facials, peels and glow therapies that culminates on your wedding morning." },
     ],
   },
   {
     id: "makeup",
     label: "Luxury Makeup",
     items: [
-      { img: IMG.svcMake1, time: "45 min", price: "PKR 8,000", title: "Elegant HD Glam Makeup", text: "Modern soft-glam with HD base, sculpted brows and a luminous finish for engagements and soirées." },
-      { img: IMG.svcMake2, time: "40 min", price: "PKR 6,500", title: "Traditional Soft-Glow Glam", text: "Timeless Pakistani soft-glow artistry honoring regional heritage with modern technique." },
-      { img: IMG.svcMake3, time: "30 min", price: "PKR 4,500", title: "Event & Walima Restyle", text: "Precision touch-up and restyle service to carry your look flawlessly from mehndi to walima." },
+      { img: IMG.svcMake1, time: "45 min", price: "$135", title: "Elegant HD Glam Makeup", text: "Modern soft-glam with HD base, sculpted brows and a luminous finish for galas, engagements, and soirées." },
+      { img: IMG.svcMake2, time: "40 min", price: "$120", title: "Red Carpet Soft-Glow Glam", text: "Timeless Hollywood soft-glow artistry highlighting natural beauty with high-definition pigments." },
+      { img: IMG.svcMake3, time: "30 min", price: "$85", title: "Event & Cocktail Restyle", text: "Precision touch-up and restyle service to carry your look effortlessly into the evening." },
     ],
   },
 ];
@@ -273,48 +272,48 @@ export const SERVICE_TABS: { id: string; label: string; items: Service[] }[] = [
 /* ---------------- team ---------------- */
 
 export const TEAM = [
-  { img: IMG.teamSarah, name: "Sarah Ahmad", role: "Senior Colorist", tags: ["Balayage & Repair", "10 Years Exp"], rating: "5.0" },
-  { img: IMG.teamAyesha, name: "Ayesha Khan", role: "Bridal Specialist", tags: ["Pakistani Bridal Glow", "8 Years Exp"], rating: "4.9" },
-  { img: IMG.teamFatima, name: "Fatima Malik", role: "Nail Artist", tags: ["Bespoke Gel & Hand-Art", "6 Years Exp"], rating: "5.0" },
-  { img: IMG.teamHira, name: "Hira Siddiqui", role: "Spa Therapist", tags: ["Aromatherapy Release", "9 Years Exp"], rating: "4.9" },
-  { img: IMG.teamZainab, name: "Zainab Ali", role: "Makeup Artist", tags: ["Traditional & HD Glow", "7 Years Exp"], rating: "5.0" },
-  { img: IMG.teamMaria, name: "Maria Tariq", role: "Hair Stylist", tags: ["Couture Cuts & Layers", "5 Years Exp"], rating: "4.8" },
+  { img: IMG.teamSarah, name: "Sarah Jenkins", role: "Senior Colorist", tags: ["Balayage & Repair", "10 Years Exp"], rating: "5.0" },
+  { img: IMG.teamAyesha, name: "Elena Vance", role: "Creative Director", tags: ["Couture Bridal Glow", "12 Years Exp"], rating: "5.0" },
+  { img: IMG.teamFatima, name: "Chloe Bennett", role: "Nail Artist", tags: ["Bespoke Gel & Hand-Art", "6 Years Exp"], rating: "5.0" },
+  { img: IMG.teamHira, name: "Aria Montgomery", role: "Spa Therapist", tags: ["Aromatherapy Release", "9 Years Exp"], rating: "4.9" },
+  { img: IMG.teamZainab, name: "Camila Torres", role: "Makeup Artist", tags: ["Red Carpet & HD Glow", "7 Years Exp"], rating: "5.0" },
+  { img: IMG.teamMaria, name: "Dr. Maria Ross", role: "Aesthetic Skin Specialist", tags: ["Clinical Dermatology", "8 Years Exp"], rating: "4.9" },
 ];
 
 export const GALLERY = [
-  { img: IMG.gal1, cat: "Hair Transformations", label: "Hair", meta: "Stylist: Sarah Ahmad", tall: true },
-  { img: IMG.gal2, cat: "Spa", label: "Spa", meta: "Stylist: Hira Siddiqui" },
-  { img: IMG.gal3, cat: "Bridal", label: "Bridal", meta: "Stylist: Ayesha Khan", tall: true },
-  { img: IMG.gal4, cat: "Nail Art", label: "Nail Art", meta: "Stylist: Fatima Malik", tall: true },
-  { img: IMG.gal5, cat: "Nail Art", label: "Nail Art", meta: "Stylist: Fatima Malik" },
-  { img: IMG.gal6, cat: "Hair Transformations", label: "Hair", meta: "Stylist: Sarah Ahmad", tall: true },
-  { img: IMG.gal7, cat: "Bridal", label: "Bridal", meta: "Stylist: Ayesha Khan", tall: true },
-  { img: IMG.gal8, cat: "Hair Transformations", label: "Hair Transformation", meta: "Sarah Ahmad · Keratin Blowout" },
-  { img: IMG.gal9, cat: "Makeup", label: "Makeup", meta: "Stylist: Zainab Ali", tall: true },
-  { img: IMG.gal10, cat: "Spa", label: "Spa", meta: "Stylist: Hira Siddiqui" },
-  { img: IMG.gal11, cat: "Spa", label: "Spa", meta: "Stylist: Maria Malik", tall: true },
-  { img: IMG.gal12, cat: "Nail Art", label: "Nail Art", meta: "Stylist: Fatima Malik" },
+  { img: IMG.gal1, cat: "Hair Transformations", label: "Hair", meta: "Stylist: Sarah Jenkins", tall: true },
+  { img: IMG.gal2, cat: "Spa", label: "Spa", meta: "Therapist: Aria Montgomery" },
+  { img: IMG.gal3, cat: "Bridal", label: "Bridal", meta: "Stylist: Elena Vance", tall: true },
+  { img: IMG.gal4, cat: "Nail Art", label: "Nail Art", meta: "Stylist: Chloe Bennett", tall: true },
+  { img: IMG.gal5, cat: "Nail Art", label: "Nail Art", meta: "Stylist: Chloe Bennett" },
+  { img: IMG.gal6, cat: "Hair Transformations", label: "Hair", meta: "Stylist: Sarah Jenkins", tall: true },
+  { img: IMG.gal7, cat: "Bridal", label: "Bridal", meta: "Stylist: Elena Vance", tall: true },
+  { img: IMG.gal8, cat: "Hair Transformations", label: "Hair Transformation", meta: "Sarah Jenkins · Keratin Blowout" },
+  { img: IMG.gal9, cat: "Makeup", label: "Makeup", meta: "Stylist: Camila Torres", tall: true },
+  { img: IMG.gal10, cat: "Spa", label: "Spa", meta: "Therapist: Aria Montgomery" },
+  { img: IMG.gal11, cat: "Spa", label: "Spa", meta: "Therapist: Dr. Maria Ross", tall: true },
+  { img: IMG.gal12, cat: "Nail Art", label: "Nail Art", meta: "Stylist: Chloe Bennett" },
 ];
 
 export const BRIDAL_PACKAGES = [
   {
     name: "Glow Package",
-    price: "PKR 45,000",
+    price: "$450",
     features: ["Premium Hair Styling & Blowout", "Elegant HD Basic Makeup", "Signature Gel Nail Art", "Customized Skin Consultation"],
     dark: false,
     popular: false,
   },
   {
     name: "Luxe Package",
-    price: "PKR 85,000",
-    features: ["Full Couture Hair Draping", "Signature HD Bridal Makeup", "Luxury Lashes & Fitting", "Organic Rose-Milk Mani-Pedi", "Pre-Bridal European Facial"],
+    price: "$850",
+    features: ["Full Couture Hair & Veil Draping", "Signature HD Bridal Makeup", "Luxury Lashes & Fitting", "Organic Rose-Milk Mani-Pedi", "Pre-Bridal European Facial"],
     dark: true,
     popular: true,
   },
   {
     name: "Elite Package",
-    price: "PKR 150,000",
-    features: ["All Luxe Package Indulgences", "Traditional Mehndi Day Look", "Timeless Walima Day Transformation", "2 Full Trial Sessions with Amna", "Complete Clinical Skincare Regimen"],
+    price: "$1,500",
+    features: ["All Luxe Package Indulgences", "Rehearsal Dinner Glow Look", "Wedding Day Full Transformation", "2 Full Trial Sessions with Elena", "Complete Clinical Skincare Regimen"],
     dark: false,
     popular: false,
   },
@@ -322,7 +321,7 @@ export const BRIDAL_PACKAGES = [
 
 export const BRIDAL_TIMELINE = [
   { when: "6 Months Before", title: "Hair Growth & Skin Plan", text: "Start customized scalp detox and clinical laser/facial therapy series." },
-  { when: "3 Months Before", title: "Trials & Style Match", text: "Book your mock consultations and pin down your moodboards with Amna." },
+  { when: "3 Months Before", title: "Trials & Style Match", text: "Book your mock consultations and pin down your moodboards with Elena." },
   { when: "1 Month Before", title: "Advanced Color Treatment", text: "Settle in your perfect signature balayage or deep protein hair therapies." },
   { when: "1 Week Before", title: "Glow Facials & Mani Pedi", text: "Rejuvenate with organic rose-milk skin treatments and elite OPI nail curation." },
   { when: "The Wedding Day", title: "Sublime Mastery Reveal", text: "Relax inside your private sterilized suite while our team delivers magic." },
@@ -332,7 +331,7 @@ export const MEMBERSHIP_TIERS = [
   {
     tier: "Tier One",
     name: "Glow Membership",
-    price: "PKR 5,000",
+    price: "$89 / mo",
     features: [
       "10% off all standard salon services",
       "2 complimentary deep-conditioning add-ons",
@@ -345,7 +344,7 @@ export const MEMBERSHIP_TIERS = [
   {
     tier: "Tier Two",
     name: "Luxe Membership",
-    price: "PKR 12,000",
+    price: "$189 / mo",
     features: [
       "20% off all hair, skin, and spa services",
       "Free scalp therapy with every wash & blow",
@@ -358,7 +357,7 @@ export const MEMBERSHIP_TIERS = [
   {
     tier: "Tier Three",
     name: "Elite VIP Sanctuary",
-    price: "PKR 25,000",
+    price: "$349 / mo",
     features: [
       "30% off all hair care & aesthetic therapies",
       "Dedicated master stylist assignment",
@@ -375,22 +374,22 @@ export const ARTICLES = [
     img: IMG.journal1,
     tag: "Skincare",
     date: "May 12, 2026",
-    title: "5 Essential Halal Skincare Tips for Humid Monsoon in Lahore",
-    text: "Our resident aesthetician, Dr. Maria Malik, details standard safe practices to preserve glowing balance during the humid months.",
+    title: "5 Essential Clean Skincare Tips for California Sun & Summer",
+    text: "Our resident aesthetician, Dr. Maria Ross, details standard safe practices to preserve glowing balance during the sunniest months.",
   },
   {
     img: IMG.journal2,
     tag: "Bridal Guide",
     date: "April 28, 2026",
-    title: "The Ultimate Pakistani Bridal Prep Timeline: 6 Months to Glow",
-    text: "From deep scalp detox therapies to flawless micro-contouring trials. Get the step-by-step master plan for the elegant bride.",
+    title: "The Ultimate Bridal Beauty Timeline: 6 Months to Flawless Glow",
+    text: "From deep scalp detox therapies to flawless micro-contouring trials. Get the step-by-step master plan for the modern bride.",
   },
   {
     img: IMG.journal3,
     tag: "Hair Care",
     date: "April 15, 2026",
-    title: "Balayage vs. Highlights: What's Best for South Asian Hair?",
-    text: "Senior Colorist Yousuf Khan breaks down global trends, non-formaldehyde Olaplex protections, and structural hair care standards.",
+    title: "Balayage vs. Highlights: What's Best for Your Hair Texture?",
+    text: "Senior Colorist Marcus Hayes breaks down global trends, non-ammonia Olaplex protections, and structural hair care standards.",
   },
   {
     img: IMG.journal4,
@@ -406,12 +405,12 @@ export const FAQS = [
     group: "Booking & Cancellation",
     items: [
       {
-        q: "How do I cancel or reschedule my appointment in DHA Lahore?",
-        a: "We require a 24-hour advanced notice for any cancellations or reschedules. Late cancellations are subject to a fee of PKR 500. This standard policy respects our stylists' dedicated slots.",
+        q: "How do I cancel or reschedule my appointment in Beverly Hills?",
+        a: "We require a 24-hour advanced notice for any cancellations or reschedules. Late cancellations are subject to a nominal $25 fee. This standard policy respects our stylists' dedicated slots.",
       },
       {
         q: "Can I book a specific specialist or Creative Director directly?",
-        a: "Absolutely. Every service on our menu can be assigned to a named artisan. During booking, the Choose Stylist step lets you select your preferred master — and Creative Director Amna Shah's slots are reserved for registered members and bridal clients.",
+        a: "Absolutely. Every service on our menu can be assigned to a named artisan. During booking, the Choose Stylist step lets you select your preferred master — and Creative Director Elena Vance's slots are reserved for registered members and bridal clients.",
       },
     ],
   },
@@ -419,8 +418,8 @@ export const FAQS = [
     group: "Services & Standards",
     items: [
       {
-        q: "Are all your hair and skincare premium products fully Halal certified?",
-        a: "Yes. We exclusively formulate with premium certified brands — Kérastase, Olaplex, Dermalogica, OPI — alongside our own organic cold-pressed botanicals. Every product on our shelves meets our halal and safety review before it ever reaches a client.",
+        q: "Are all your hair and skincare premium products cruelty-free & clean?",
+        a: "Yes. We exclusively formulate with clean, premium certified brands — Kérastase, Olaplex, Dermalogica, OPI — alongside our own organic cold-pressed botanicals. Every product on our shelves meets rigorous purity and safety standards before it ever touches your skin or hair.",
       },
     ],
   },

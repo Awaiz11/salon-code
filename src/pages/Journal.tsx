@@ -47,10 +47,10 @@ function FakeMap() {
         </g>
       </svg>
       <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full bg-ink/95 px-4 py-2 text-[11px] font-medium text-white shadow-lg">
-        <IconPin className="h-3.5 w-3.5 text-gold" /> DHA Phase 5, Lahore
+        <IconPin className="h-3.5 w-3.5 text-gold" /> Beverly Hills, CA
       </div>
       <div className="absolute right-4 top-4 flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-2 text-[10.5px] text-ink shadow">
-        <IconSearch className="h-3 w-3 text-body" /> DHA Phase 5 Commercial, Lahore
+        <IconSearch className="h-3 w-3 text-body" /> 450 N Canon Dr, Beverly Hills
       </div>
     </div>
   );
@@ -150,21 +150,21 @@ export default function Journal() {
                 <IconPin className="mt-0.5 h-4.5 w-4.5 shrink-0 text-golddark" />
                 <div>
                   <p className="font-semibold text-ink">Address</p>
-                  <p className="mt-0.5 text-body">145 Commercial Area, DHA Phase 5, Lahore, Pakistan</p>
+                  <p className="mt-0.5 text-body">450 N Canon Dr, Beverly Hills, CA 90210, USA</p>
                 </div>
               </li>
               <li className="flex gap-4">
                 <IconPhone className="mt-0.5 h-4.5 w-4.5 shrink-0 text-golddark" />
                 <div>
-                  <p className="font-semibold text-ink">Phone &amp; WhatsApp</p>
-                  <p className="mt-0.5 text-body">+92 321 123 4567 | +92 42 35123456</p>
+                  <p className="font-semibold text-ink">Phone &amp; Concierge</p>
+                  <p className="mt-0.5 text-body">+1 (310) 555-0199 | +1 (310) 555-0144</p>
                 </div>
               </li>
               <li className="flex gap-4">
                 <IconMail className="mt-0.5 h-4.5 w-4.5 shrink-0 text-golddark" />
                 <div>
                   <p className="font-semibold text-ink">Email Address</p>
-                  <p className="mt-0.5 text-body">hello@luxehaven.pk</p>
+                  <p className="mt-0.5 text-body">hello@luxehaven.com</p>
                 </div>
               </li>
             </ul>
@@ -176,7 +176,7 @@ export default function Journal() {
                   <label className="mb-1.5 block text-[10.5px] font-semibold uppercase tracking-[0.16em] text-body">
                     Full Name
                   </label>
-                  <input className="input-luxe" placeholder="Zainab Malik" />
+                  <input className="input-luxe" placeholder="Victoria Sterling" />
                 </div>
                 <div>
                   <label className="mb-1.5 block text-[10.5px] font-semibold uppercase tracking-[0.16em] text-body">

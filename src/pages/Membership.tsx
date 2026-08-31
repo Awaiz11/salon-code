@@ -4,30 +4,30 @@ import { PageHero, SectionHead } from "../components/shared";
 import { IconCheck, IconGem } from "../components/icons";
 import { IMG, MEMBERSHIP_TIERS } from "../data";
 
-const GIFT_VALUES = ["PKR 5,000", "PKR 10,000", "PKR 25,000", "Custom Value"];
+const GIFT_VALUES = ["$100", "$250", "$500", "Custom Value"];
 
 const HOW = [
-  { n: "01", title: "Choose Amount", text: "Select one of our preset luxury experience packages or specify your bespoke custom PKR amount directly." },
-  { n: "02", title: "Personalize Message", text: "Incorporate a tailored message for weddings, anniversaries, or traditional Eid sharing, choosing a template style." },
-  { n: "03", title: "Send Instantly", text: "Dispatch directly via elegant email notification or request our physical premium custom gold-foiled card delivered to their doorstep." },
+  { n: "01", title: "Choose Amount", text: "Select one of our preset luxury experience packages or specify your bespoke custom USD amount directly." },
+  { n: "02", title: "Personalize Message", text: "Incorporate a tailored message for weddings, birthdays, holidays, or anniversaries, choosing an elegant template style." },
+  { n: "03", title: "Send Instantly", text: "Dispatch directly via elegant digital delivery or request our physical premium custom gold-foiled card delivered to their doorstep." },
 ];
 
 export default function Membership() {
-  const [gift, setGift] = useState("PKR 10,000");
-  const amount = gift === "Custom Value" ? "PKR —" : gift;
+  const [gift, setGift] = useState("$250");
+  const amount = gift === "Custom Value" ? "$ —" : gift;
 
   return (
     <>
       <PageHero
         title="Exclusive Membership & Gift Cards"
-        sub="Gain priority privileges inside Lahore's premium sanctuary. Tailored wellness monthly programs and magnificent gold-foiled sharing packages."
+        sub="Gain priority privileges inside Beverly Hills' premier beauty sanctuary. Tailored wellness monthly programs and magnificent gold-foiled gifting packages."
         image={IMG.membershipHero}
       />
 
       {/* tiers */}
       <section className="bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <SectionHead eyebrow="Monthly Packages" title="Select Your Aesthetic tier" />
+          <SectionHead eyebrow="Monthly Packages" title="Select Your Aesthetic Tier" />
           <div className="mt-14 grid items-stretch gap-7 lg:grid-cols-3">
             {MEMBERSHIP_TIERS.map((t) => (
               <div
@@ -73,7 +73,7 @@ export default function Membership() {
       <section className="bg-ink py-20 md:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 md:px-8 lg:grid-cols-2">
           <div>
-            <p className="eyebrow">Thoughtful Sharing</p>
+            <p className="eyebrow">Thoughtful Gifting</p>
             <h2 className="font-serif mt-4 text-3xl font-bold leading-tight text-white md:text-[42px]">
               The Luxe Gift of
               <br />
@@ -81,9 +81,9 @@ export default function Membership() {
             </h2>
             <span className="mt-5 block h-px w-16 bg-gold" />
             <p className="mt-7 max-w-lg text-[14px] leading-relaxed text-white/65">
-              Give your loved ones in Lahore the perfect aesthetic indulgence. Whether for a customized bridal prep, a
-              soothing deep tissue massage, or a complete style makeover. Choose from our digital delivery options or
-              retrieve an elegantly physical gold-foiled package in our DHA salon.
+              Give your loved ones the ultimate aesthetic indulgence. Whether for customized bridal prep, a
+              soothing aromatherapy ritual, or a complete style makeover. Choose from our digital delivery options or
+              retrieve an elegant physical gold-foiled package from our Beverly Hills salon.
             </p>
             <p className="mt-8 text-[12px] font-semibold text-white/80">Select Gift Value:</p>
             <div className="mt-4 flex flex-wrap gap-3">
@@ -121,7 +121,7 @@ export default function Membership() {
               <p className="mt-2 font-serif text-3xl font-bold text-gold">{amount}</p>
               <div className="mt-10 flex items-end justify-between text-[9.5px] text-white/40">
                 <span>Card Ref: LH-9842-8349</span>
-                <span>DHA Lahore</span>
+                <span>Beverly Hills, CA</span>
               </div>
             </div>
           </div>

@@ -4,15 +4,15 @@ import { IMG } from "../data";
 
 const PILLS = [
   { icon: "award", title: "Aesthetic Excellence", text: "We pursue perfection. From clean nail geometry to absolute balayage transition blends, we set uncompromising standards." },
-  { icon: "gem", title: "Cultural Authenticity", text: "Deeply respectful of our heritage. We formulate specialized treatments optimized for regional hair profiles and gorgeous traditional bride styling." },
-  { icon: "leaf", title: "Holistic Wellness", text: "Beauty is not skin-deep. We incorporate customized therapeutic aromatherapy and safe scalp detoxification into every salon service." },
+  { icon: "gem", title: "Artisanal Craft", text: "Deeply respectful of timeless techniques. We formulate specialized treatments optimized for every hair texture and couture bridal styling." },
+  { icon: "leaf", title: "Holistic Wellness", text: "Beauty is not skin-deep. We incorporate customized therapeutic aromatherapy and clean scalp detoxification into every salon service." },
 ];
 
 const CURATORS = [
-  { img: IMG.aboutAmna, name: "Amna Shah", role: "Creative Director" },
-  { img: IMG.aboutYousuf, name: "Yousuf Khan", role: "Master Barber & Stylist" },
-  { img: IMG.aboutMaria, name: "Dr. Maria Malik", role: "Aesthetic Skin Specialist" },
-  { img: IMG.aboutRina, name: "Rina Baig", role: "Nail Art Curator" },
+  { img: IMG.aboutAmna, name: "Elena Vance", role: "Creative Director" },
+  { img: IMG.aboutYousuf, name: "Marcus Hayes", role: "Master Hair Colorist" },
+  { img: IMG.aboutMaria, name: "Dr. Maria Ross", role: "Aesthetic Skin Specialist" },
+  { img: IMG.aboutRina, name: "Chloe Bennett", role: "Nail Art Curator" },
 ];
 
 const BRANDS = ["Kérastase", "Olaplex", "OPI", "Dermalogica", "Dyson"];
@@ -20,8 +20,8 @@ const BRANDS = ["Kérastase", "Olaplex", "OPI", "Dermalogica", "Dyson"];
 const STATS = [
   { n: "5,000+", l: "Elegantly Served Clients" },
   { n: "15+", l: "Global Master Stylists" },
-  { n: "50+", l: "Regional Beauty & Standards Awards" },
-  { n: "100%", l: "Sterilization Guarantee" },
+  { n: "50+", l: "Industry & Style Accolades" },
+  { n: "100%", l: "Clean & Sterile Guarantee" },
 ];
 
 export default function About() {
@@ -30,7 +30,7 @@ export default function About() {
       <PageHero
         eyebrow="The Legend of Luxury"
         title="Our Story & Philosophy"
-        sub="Founded on the ideals of grace, wellness, and uncompromised quality, Luxe Haven has pioneered standard-setting holistic beauty care in Pakistan."
+        sub="Founded on the ideals of grace, wellness, and uncompromised quality, Luxe Haven has pioneered standard-setting holistic beauty care in Southern California."
         image={IMG.aboutHero}
       />
 
@@ -43,27 +43,27 @@ export default function About() {
           <div>
             <p className="eyebrow">Established 2018</p>
             <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-ink md:text-[38px]">
-              Bespoke Sanctuary in the Heart of DHA Lahore
+              Bespoke Sanctuary in the Heart of Beverly Hills
             </h2>
             <p className="mt-6 text-[14px] leading-relaxed text-body">
-              Founded in 2018 in the elite neighborhood of DHA Phase 5, Lahore, Luxe Haven was conceived by
-              visionaries who sought to elevate local salon experiences into deeply restorative journeys.
+              Founded in 2018 in the iconic neighborhood of Beverly Hills, California, Luxe Haven was conceived by
+              visionaries who sought to elevate salon experiences into deeply restorative journeys.
             </p>
             <p className="mt-4 text-[14px] leading-relaxed text-body">
-              We noticed a gap in our market — while salons provided service, they rarely cultivated peace. We
-              designed Luxe Haven to be an escape from the busy metropolitan hum. Today, we are proud to serve over
-              5,000 esteemed regular clients, providing a standardized, medically sterile environment paired with the
-              timeless luxury of authentic organic rituals.
+              We noticed a gap in the beauty space — while salons provided quick appointments, they rarely cultivated peace. We
+              designed Luxe Haven to be a serene sanctuary from the metropolitan hum. Today, we are proud to serve over
+              5,000 esteemed clients, providing medical-grade cleanliness paired with the
+              timeless luxury of authentic botanical rituals.
             </p>
             <div className="mt-8 flex items-center gap-10">
               <div>
-                <p className="font-serif text-3xl font-bold text-gold">5 Years+</p>
+                <p className="font-serif text-3xl font-bold text-gold">8 Years+</p>
                 <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-body">Of Aesthetic Craft</p>
               </div>
               <span className="h-10 w-px bg-line" />
               <div>
                 <p className="font-serif text-3xl font-bold text-gold">100%</p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-body">Halal &amp; Safe Methods</p>
+                <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-body">Clean &amp; Safe Methods</p>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function About() {
         <div className="mx-auto max-w-2xl px-5">
           <h2 className="font-serif text-3xl font-bold text-white md:text-[40px]">Experience Sublime Luxury</h2>
           <p className="mx-auto mt-5 max-w-md text-[14px] leading-relaxed text-white/65">
-            Reserve your priority appointment today in DHA Lahore. Enjoy customized consultation and zero waiting
+            Reserve your priority appointment today in Beverly Hills, CA. Enjoy customized consultation and zero waiting
             times.
           </p>
           <a href="#/booking" className="btn-gold mt-9">Book Your Visit Today</a>

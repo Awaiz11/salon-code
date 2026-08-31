@@ -21,22 +21,22 @@ export default function Bridal() {
               const pkgs = [
                 {
                   name: "Glow Package",
-                  price: "PKR 45,000",
+                  price: "$450",
                   features: ["Premium Hair Styling & Blowout", "Elegant HD Basic Makeup", "Signature Gel Nail Art", "Customized Skin Consultation"],
                   dark: false,
                   popular: false,
                 },
                 {
                   name: "Luxe Package",
-                  price: "PKR 85,000",
-                  features: ["Full Couture Hair Draping", "Signature HD Bridal Makeup", "Luxury Lashes & Fitting", "Organic Rose-Milk Mani-Pedi", "Pre-Bridal European Facial"],
+                  price: "$850",
+                  features: ["Full Couture Hair & Veil Draping", "Signature HD Bridal Makeup", "Luxury Lashes & Fitting", "Organic Rose-Milk Mani-Pedi", "Pre-Bridal European Facial"],
                   dark: true,
                   popular: true,
                 },
                 {
                   name: "Elite Package",
-                  price: "PKR 150,000",
-                  features: ["All Luxe Package Indulgences", "Traditional Mehndi Day Look", "Timeless Walima Day Transformation", "2 Full Trial Sessions with Amna", "Complete Clinical Skincare Regimen"],
+                  price: "$1,500",
+                  features: ["All Luxe Package Indulgences", "Rehearsal Dinner Glow Look", "Wedding Day Full Transformation", "2 Full Trial Sessions with Elena", "Complete Clinical Skincare Regimen"],
                   dark: false,
                   popular: false,
                 },
@@ -87,7 +87,7 @@ export default function Bridal() {
             {(() => {
               const tl = [
                 { when: "6 Months Before", title: "Hair Growth & Skin Plan", text: "Start customized scalp detox and clinical laser/facial therapy series." },
-                { when: "3 Months Before", title: "Trials & Style Match", text: "Book your mock consultations and pin down your moodboards with Amna." },
+                { when: "3 Months Before", title: "Trials & Style Match", text: "Book your mock consultations and pin down your moodboards with Elena." },
                 { when: "1 Month Before", title: "Advanced Color Treatment", text: "Settle in your perfect signature balayage or deep protein hair therapies." },
                 { when: "1 Week Before", title: "Glow Facials & Mani Pedi", text: "Rejuvenate with organic rose-milk skin treatments and elite OPI nail curation." },
                 { when: "The Wedding Day", title: "Sublime Mastery Reveal", text: "Relax inside your private sterilized suite while our team delivers magic." },
@@ -123,11 +123,11 @@ export default function Bridal() {
               </div>
               <div>
                 <label className="mb-1.5 block text-[12px] font-semibold text-ink">Phone Number</label>
-                <input className="input-luxe" placeholder="+92 300 1234567" />
+                <input className="input-luxe" placeholder="+1 (310) 555-0199" />
               </div>
               <div>
                 <label className="mb-1.5 block text-[12px] font-semibold text-ink">Wedding Date</label>
-                <input className="input-luxe" placeholder="DD / MM / YYYY" />
+                <input className="input-luxe" placeholder="MM / DD / YYYY" />
               </div>
               <div>
                 <label className="mb-1.5 block text-[12px] font-semibold text-ink">Package Preference</label>
@@ -140,19 +140,19 @@ export default function Bridal() {
               </div>
               <div className="sm:col-span-2">
                 <label className="mb-1.5 block text-[12px] font-semibold text-ink">
-                  Special Requests or Skin/Hair Concerns
+                  Special Requests or Hair/Skin Concerns
                 </label>
                 <textarea
                   rows={4}
                   className="input-luxe resize-none"
-                  placeholder="Describe any specific traditions, dupatta details, or theme preferences…"
+                  placeholder="Describe your veil preferences, dress neckline, wedding theme, or special requests…"
                 />
               </div>
               <button type="submit" className="btn-gold w-full !py-4 sm:col-span-2">Submit Secure Request</button>
             </form>
           </div>
           <div className="overflow-hidden rounded-xl shadow-[0_25px_60px_-28px_rgba(43,33,40,0.55)]">
-            <img src={IMG.bridalFabric} alt="Bridal embroidery" className="h-full min-h-[380px] w-full object-cover" />
+            <img src={IMG.bridalFabric} alt="Bridal styling" className="h-full min-h-[380px] w-full object-cover" />
           </div>
         </div>
       </section>
@@ -162,16 +162,15 @@ export default function Bridal() {
         <div className="mx-auto max-w-3xl px-5 text-center md:px-8">
           <Stars outline starClass="w-5 h-5" className="justify-center gap-2" />
           <blockquote className="mt-7 font-serif text-xl leading-relaxed text-ink md:text-[22px]">
-            "Finding a salon that understands both modern global hair techniques and our rich Pakistani bridal
-            traditions was impossible until I found Luxe Haven. Ayesha's makeup stayed fresh through a humid 8-hour
-            outdoor walima, and the private spa rooms are truly therapeutic. The ultimate beauty standard in DHA
-            Lahore."
+            "Finding a salon that balances contemporary bridal hair couture with calming holistic skin prep was
+            a dream come true. Elena's makeup and veil styling held up effortlessly through an 8-hour celebration,
+            and the private bridal suite was peaceful and serene. The ultimate luxury standard in Beverly Hills."
           </blockquote>
           <div className="mt-8 flex items-center justify-center gap-3">
-            <img src={IMG.avatarZainab} alt="Zainab Malik" className="h-11 w-11 rounded-full object-cover ring-2 ring-gold/40" />
+            <img src={IMG.avatarZainab} alt="Victoria Sterling" className="h-11 w-11 rounded-full object-cover ring-2 ring-gold/40" />
             <div className="text-left">
-              <p className="text-[13.5px] font-bold text-ink">Zainab Malik</p>
-              <p className="text-[11.5px] text-body">Bridal Client · DHA Phase 5</p>
+              <p className="text-[13.5px] font-bold text-ink">Victoria Sterling</p>
+              <p className="text-[11.5px] text-body">Bridal Client · Beverly Hills</p>
             </div>
           </div>
         </div>

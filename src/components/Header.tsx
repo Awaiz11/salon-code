@@ -28,7 +28,7 @@ export default function Header({ route }: { route: string }) {
           <p className="flex min-w-0 items-center gap-2 text-[11.5px] font-medium tracking-wide">
             <IconSparkle className="h-3.5 w-3.5 shrink-0" />
             <span className="truncate">
-              EID SPECIAL OFFER: Enjoy 20% off all luxury spa packages &amp; customized bridal hair therapy. Limited slots!
+              EXCLUSIVE OFFER: Enjoy 20% off all signature luxury spa packages &amp; bespoke bridal hair therapy. Limited slots!
             </span>
           </p>
           <a href="#/booking" className="shrink-0 text-[11.5px] font-semibold tracking-wide hover:underline">
@@ -42,14 +42,14 @@ export default function Header({ route }: { route: string }) {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-1.5 text-[11px] text-white/60 md:px-8">
           <div className="flex items-center gap-6">
             <span className="inline-flex items-center gap-1.5">
-              <IconPin className="h-3.5 w-3.5 text-gold" /> DHA Phase 5, Lahore, Pakistan
+              <IconPin className="h-3.5 w-3.5 text-gold" /> 450 N Canon Dr, Beverly Hills, CA 90210
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <IconClock className="h-3.5 w-3.5 text-gold" /> Mon - Sun: 11:00 AM - 9:00 PM
+              <IconClock className="h-3.5 w-3.5 text-gold" /> Mon - Sun: 9:00 AM - 8:00 PM
             </span>
           </div>
           <p>
-            <span className="text-gold">Call Us:</span> <a href="tel:+924235123456" className="hover:text-gold">+92 42 35123456</a>
+            <span className="text-gold">Call Us:</span> <a href="tel:+13105550199" className="hover:text-gold">+1 (310) 555-0199</a>
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function Team() {
     <>
       <PageHero
         title="Meet Our Experts"
-        sub="The creative visionaries and master technicians dedicated to elevating your signature aesthetic at Luxe Haven Lahore."
+        sub="The creative visionaries and master technicians dedicated to elevating your signature aesthetic at Luxe Haven Beverly Hills."
         image={IMG.membershipHero}
         center
       />
@@ -53,17 +53,17 @@ export default function Team() {
       {/* spotlight */}
       <section className="bg-white py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <SectionHead eyebrow="Artisan Spotlight" title="Meet Sarah Ahmad" />
+          <SectionHead eyebrow="Artisan Spotlight" title="Meet Sarah Jenkins" />
           <div className="mt-14 grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="overflow-hidden rounded-xl shadow-[0_25px_60px_-28px_rgba(43,33,40,0.5)]">
-              <img src={IMG.spotlight} alt="Sarah Ahmad" className="h-full w-full object-cover" />
+              <img src={IMG.spotlight} alt="Sarah Jenkins" className="h-full w-full object-cover" />
             </div>
             <div>
               <h3 className="font-serif text-2xl font-bold text-ink md:text-[32px]">Master of Balayage &amp; French Cuts</h3>
               <p className="mt-5 text-[14px] leading-relaxed text-body">
-                Sarah Ahmad brings a decade of international training from Paris to Lahore. Specializing in advanced
+                Sarah Jenkins brings over a decade of international training from Paris and New York to Beverly Hills. Specializing in advanced
                 hair transformation, she is renowned for her precise color blending that enhances natural hair
-                patterns with absolute protection.
+                patterns with absolute bond protection.
               </p>
 
               <p className="eyebrow mt-9">Sarah's Recent Creations</p>

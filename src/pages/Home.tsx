@@ -19,7 +19,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#211720]/95 via-[#211720]/80 to-[#211720]/45" />
         <div className="relative mx-auto w-full max-w-7xl px-5 py-24 md:px-8">
           <div className="max-w-2xl">
-            <Eyebrow>Lahore's Premier Luxury Haven</Eyebrow>
+            <Eyebrow>Beverly Hills' Premier Luxury Haven</Eyebrow>
             <h1 className="mt-4 font-serif text-5xl font-bold leading-[1.08] text-white md:text-[68px]">
               Where Beauty
               <br />
@@ -28,8 +28,8 @@ export default function Home() {
               Experience
             </h1>
             <p className="mt-6 max-w-md text-[15px] leading-relaxed text-white/80">
-              Step into Lahore's most exclusive aesthetic sanctuary in DHA. Our award-winning therapists and stylists
-              customize every indulgence to reveal your sublime signature aura.
+              Step into Beverly Hills' most exclusive aesthetic sanctuary. Our award-winning therapists and master stylists
+              customize every indulgence to reveal your sublime signature glow.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <a href="#/booking" className="btn-gold">Book Appointment</a>
@@ -93,8 +93,8 @@ export default function Home() {
               Indulgence
             </h2>
             <p className="mt-6 max-w-md text-[14px] leading-relaxed text-white/65">
-              At Luxe Haven, we define high-performance aesthetic wellness. From strictly sterilized surgical-grade
-              tools to premium European formulas, we offer Lahore the golden standard of hygiene and bespoke care.
+              At Luxe Haven, we define high-performance aesthetic wellness. From medical-grade sterilized
+              tools to certified clean European formulas, we bring Beverly Hills the ultimate standard of luxury care.
             </p>
             <a href="#/about" className="btn-line-light mt-9">Learn About Our Standards</a>
           </div>
@@ -194,7 +194,7 @@ export default function Home() {
                 Premium Keratin Blowout &amp; Amino Acid Therapy
               </h3>
               <p className="mt-4 text-[14px] leading-relaxed text-body">
-                Witness the sublime rejuvenation. Designed specifically to combat humidity-related frizz in Lahore, our
+                Witness the sublime rejuvenation. Designed specifically to eliminate humidity-related frizz, our
                 non-formaldehyde botanical treatment rebuilds protein bonds to restore vibrant health, mirror-shine,
                 and lightweight flow.
               </p>
@@ -224,7 +224,7 @@ export default function Home() {
       {/* ============ TESTIMONIAL ============ */}
       <section className="bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-5xl px-5 md:px-8">
-          <SectionHead eyebrow="Client Adoration" title="Beloved by Lahore's Discerning Elite" />
+          <SectionHead eyebrow="Client Adoration" title="Beloved by California's Discerning Elite" />
           <div className="mt-12 rounded-xl bg-white p-8 text-center shadow-[0_15px_45px_-20px_rgba(43,33,40,0.3)] md:p-12">
             <Stars outline starClass="w-5 h-5" className="justify-center gap-2" />
             <blockquote className="mx-auto mt-7 max-w-3xl font-serif text-xl leading-relaxed text-ink md:text-[22px]">
@@ -262,7 +262,7 @@ export default function Home() {
               <Eyebrow>Curated Style Feed</Eyebrow>
               <h2 className="mt-3 font-serif text-3xl font-bold text-ink md:text-[38px]">Stories of Bespoke Elegance</h2>
             </div>
-            <a href="#/gallery" className="btn-line !py-3">Follow @LuxehavenLahore</a>
+            <a href="#/gallery" className="btn-line !py-3">Follow @LuxeHavenBeverlyHills</a>
           </div>
           <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
             {STORIES.map((s, i) => (
@@ -286,8 +286,8 @@ export default function Home() {
               <Eyebrow>Privileged Community</Eyebrow>
               <h3 className="mt-3 font-serif text-2xl font-bold text-ink md:text-[30px]">Subscribe to the Haven Journal</h3>
               <p className="mt-3 text-[13.5px] leading-relaxed text-body">
-                Receive exclusive seasonal menus, prioritized early booking codes for DHA Lahore slots, and
-                masterclasses from our expert bridal stylists.
+                Receive exclusive seasonal menus, prioritized early booking codes for Beverly Hills slots, and
+                masterclasses from our master stylists.
               </p>
             </div>
             <div className="w-full md:max-w-sm">
