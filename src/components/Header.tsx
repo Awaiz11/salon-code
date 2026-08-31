@@ -12,14 +12,13 @@ const NAV = [
   { label: "Bridal", path: "/bridal" },
   { label: "Membership", path: "/membership" },
   { label: "Journal", path: "/journal" },
-  { label: "Contact", path: "/journal" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export default function Header({ route }: { route: string }) {
   const [open, setOpen] = useState(false);
 
-  const isActive = (item: (typeof NAV)[number]) =>
-    item.path === route && !(item.label === "Contact" && route === "/journal");
+  const isActive = (item: (typeof NAV)[number]) => item.path === route;
 
   return (
     <header className="sticky top-0 z-50">

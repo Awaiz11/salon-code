@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery";
 import Bridal from "./pages/Bridal";
 import Membership from "./pages/Membership";
 import Journal from "./pages/Journal";
+import Contact from "./pages/Contact";
 
 function getRoute() {
   const h = window.location.hash.replace(/^#/, "");
@@ -40,6 +41,7 @@ export default function App() {
     case "/bridal": page = <Bridal />; break;
     case "/membership": page = <Membership />; break;
     case "/journal": page = <Journal />; break;
+    case "/contact": page = <Contact />; break;
     default: page = <Home />;
   }
 

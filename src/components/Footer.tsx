@@ -20,7 +20,7 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-white/60">
+    <footer className="border-t border-[#c3a05f57] bg-ink text-white/60">
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.25fr_0.85fr_0.95fr_1.15fr]">
           <div>
