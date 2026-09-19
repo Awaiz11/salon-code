@@ -182,11 +182,11 @@ export default function ThemeSwitcher() {
       : "ring-1 ring-white/20 hover:scale-110 hover:ring-white/50";
 
   return (
-    <div ref={panelRef} className="fixed right-0 top-1/2 z-50 -translate-y-1/2 flex items-center">
+    <div ref={panelRef} className="fixed right-0 top-1/2 z-50 -translate-y-1/2 flex items-center pointer-events-none">
 
       {/* gear tab */}
       <div className={`transition-all duration-300 ease-in-out absolute right-0
-        flex flex-col items-end gap-1.5
+        flex flex-col items-end gap-1.5 pointer-events-auto
         ${open ? "opacity-0 pointer-events-none translate-x-2" : "opacity-100 translate-x-0"}`}>
 
         {/* dismissible label */}
@@ -226,7 +226,7 @@ export default function ThemeSwitcher() {
 
       {/* panel */}
       <div className={`transition-all duration-300 ease-in-out origin-right
-        ${open ? "opacity-100 translate-x-0 scale-100" : "opacity-0 translate-x-4 scale-95 pointer-events-none"}`}>
+        ${open ? "opacity-100 translate-x-0 scale-100 pointer-events-auto" : "opacity-0 translate-x-4 scale-95 pointer-events-none"}`}>
         <div className="w-[270px] rounded-l-2xl border border-r-0 border-white/15
           bg-[#0d0d1a]/85 backdrop-blur-2xl
           shadow-[0_20px_60px_rgba(0,0,0,0.7)]
@@ -342,9 +342,9 @@ export default function ThemeSwitcher() {
               onClick={handleReset}
               className="w-full rounded-lg border border-white/10 bg-white/5 py-2
                 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/50
-                hover:bg-white/10 hover:text-white/80 transition-all duration-200"
+                hover:bg-red-500/20 hover:border-red-500/40 hover:text-white transition-all duration-200"
             >
-              Reset to Default
+              Reset to Original Brand Colors
             </button>
           </div>
 

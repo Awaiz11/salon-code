@@ -3,6 +3,9 @@ const px = (id: number, w = 800, h?: number) =>
     h ? `&h=${h}&fit=crop` : ""
   }`;
 
+/* -------------------------------------------------- storage */
+export const STORAGE_KEY = "luxe_user_appointments";
+
 /* -------------------------------------------------- images */
 
 export const IMG = {
@@ -13,16 +16,16 @@ export const IMG = {
   guidanceRoom: px(7195811, 1100, 800),
 
   previewHair: px(7388920, 700, 500),
-  previewNail: px(5484948, 700, 500),
+  previewNail: px(3997385, 700, 500),
   previewSpa: px(6629530, 700, 500),
   previewBridal: px(12708653, 700, 500),
 
-  artisanAmna: px(33867535, 700, 900),
+  artisanAmna: px(1181686, 700, 900),
   artisanYousuf: px(8468132, 700, 900),
-  artisanSarah: px(33867539, 700, 900),
+  artisanSarah: px(3756523, 700, 900),
 
-  before: px(28994387, 760, 900),
-  after: px(35267456, 760, 900),
+  before: px(8467964, 760, 900),
+  after: px(3993320, 760, 900),
   avatarZainab: px(6100178, 200, 200),
 
   keratinDetail: px(3356211, 1000, 900),
@@ -30,32 +33,32 @@ export const IMG = {
   relatedDetox: px(5240639, 800, 500),
   relatedGloss: px(35719221, 800, 500),
 
-  teamSarah: px(33867529, 800, 800),
+  teamSarah: px(774909, 800, 800),
   teamAyesha: px(3993469, 800, 800),
   teamFatima: px(3993302, 800, 800),
-  teamHira: px(33867543, 800, 800),
+  teamHira: px(1181695, 800, 800),
   teamZainab: px(5128187, 800, 800),
-  teamMaria: px(33867553, 800, 800),
+  teamMaria: px(3996169, 800, 800),
   spotlight: px(5704847, 1000, 1150),
-  spotThumb1: px(28994387, 300, 300),
+  spotThumb1: px(8467964, 300, 300),
   spotThumb2: px(6144281, 300, 300),
-  spotThumb3: px(35267456, 300, 300),
+  spotThumb3: px(3993320, 300, 300),
   spotThumb4: px(8891485, 300, 300),
 
-  aboutAmna: px(33867535, 300, 300),
+  aboutAmna: px(1181686, 300, 300),
   aboutYousuf: px(8468132, 300, 300),
-  aboutMaria: px(33867543, 300, 300),
-  aboutRina: px(33867556, 300, 300),
+  aboutMaria: px(1181695, 300, 300),
+  aboutRina: px(3996169, 300, 300),
 
   svcCut: px(8467964, 800, 560),
   svcKeratin: px(5368632, 800, 560),
   svcBalayage: px(3993320, 800, 560),
   svcDeep: px(6144281, 800, 560),
-  svcBridalHair: px(35963259, 800, 560),
+  svcBridalHair: px(4783425, 800, 560),
   svcScalp: px(13899845, 800, 560),
   svcNail1: px(4530187, 800, 560),
-  svcNail2: px(30294773, 800, 560),
-  svcNail3: px(34885844, 800, 560),
+  svcNail2: px(3997347, 800, 560),
+  svcNail3: px(3997380, 800, 560),
   svcSpa1: px(6629530, 800, 560),
   svcSpa2: px(5240634, 800, 560),
   svcSpa3: px(7109664, 800, 560),
@@ -64,7 +67,7 @@ export const IMG = {
   svcClin3: px(8945828, 800, 560),
   svcBrid1: px(36102603, 800, 560),
   svcBrid2: px(20883949, 800, 560),
-  svcBrid3: px(38147801, 800, 560),
+  svcBrid3: px(4783425, 800, 560),
   svcMake1: px(11528800, 800, 560),
   svcMake2: px(19376116, 800, 560),
   svcMake3: px(7256079, 800, 560),
@@ -73,26 +76,26 @@ export const IMG = {
   gal2: px(6629521, 700, 520),
   gal3: px(18700114, 700, 950),
   gal4: px(16041439, 700, 760),
-  gal5: px(30294773, 700, 620),
+  gal5: px(3997347, 700, 620),
   gal6: px(9197350, 700, 880),
   gal7: px(32081733, 700, 800),
   gal8: px(17320162, 700, 700),
   gal9: px(19376116, 700, 900),
   gal10: px(7109664, 700, 540),
   gal11: px(13899845, 700, 820),
-  gal12: px(34885844, 700, 700),
+  gal12: px(3997380, 700, 700),
 
-  bridalHero: px(36102603, 1800, 800),
+  bridalHero: px(7750092, 1800, 800),
   bridalFabric: px(20883949, 1000, 1000),
 
   story1: px(17154861, 600, 600),
-  story2: px(36784893, 600, 600),
+  story2: px(7750108, 600, 600),
   story3: px(8096934, 600, 600),
-  story4: px(36930152, 600, 600),
-  story5: px(34885844, 600, 600),
+  story4: px(3997385, 600, 600),
+  story5: px(3997380, 600, 600),
   story6: px(19689227, 600, 600),
   story7: px(7031713, 600, 600),
-  story8: px(35059564, 600, 600),
+  story8: px(5240634, 600, 600),
 
   journal1: px(5069458, 800, 520),
   journal2: px(35059564, 800, 520),
@@ -371,32 +374,44 @@ export const MEMBERSHIP_TIERS = [
 
 export const ARTICLES = [
   {
+    slug: "clean-skincare-california-summer",
+    author: "Dr. Maria Ross",
     img: IMG.journal1,
     tag: "Skincare",
     date: "May 12, 2026",
     title: "5 Essential Clean Skincare Tips for California Sun & Summer",
     text: "Our resident aesthetician, Dr. Maria Ross, details standard safe practices to preserve glowing balance during the sunniest months.",
+    content: "The California sun can be both beautiful and harsh on delicate facial skin. As temperatures rise, maintaining a balanced, glowing complexion requires more than just your standard SPF.\n\nFirst, always opt for a mineral-based sunscreen. Chemical filters can cause inflammation when exposed to intense UV rays. Second, incorporate a gentle Vitamin C serum into your morning routine to combat free radical damage.\n\nHydration is also key; switch to a lighter, water-based moisturizer and never forget to drink plenty of water. Finally, book regular micro-peel treatments to clear built-up sunscreen and sweat from your pores. Taking these steps will ensure your skin remains radiant all summer long."
   },
   {
+    slug: "ultimate-bridal-beauty-timeline",
+    author: "Elena Vance",
     img: IMG.journal2,
     tag: "Bridal Guide",
     date: "April 28, 2026",
     title: "The Ultimate Bridal Beauty Timeline: 6 Months to Flawless Glow",
     text: "From deep scalp detox therapies to flawless micro-contouring trials. Get the step-by-step master plan for the modern bride.",
+    content: "Preparing for your wedding day starts long before you walk down the aisle. At Luxe Haven, we recommend beginning your beauty regimen at least six months in advance.\n\nStart by establishing a consistent clinical skincare routine with our aestheticians to address any long-term concerns like hyperpigmentation or texture. Around the three-month mark, book your hair and makeup trial to solidify your aesthetic vision.\n\nAs the big day approaches, focus on hydration and gentle exfoliation. In the final week, treat yourself to our signature Rose-Milk Spa Mani-Pedi and a relaxing massage to melt away pre-wedding stress. Your wedding day glow should be both inner and outer."
   },
   {
+    slug: "balayage-vs-highlights",
+    author: "Marcus Hayes",
     img: IMG.journal3,
     tag: "Hair Care",
     date: "April 15, 2026",
     title: "Balayage vs. Highlights: What's Best for Your Hair Texture?",
     text: "Senior Colorist Marcus Hayes breaks down global trends, non-ammonia Olaplex protections, and structural hair care standards.",
+    content: "When choosing between balayage and traditional highlights, understanding your hair texture and maintenance commitment is essential.\n\nBalayage, a French hand-painting technique, offers a softer, more natural transition that grows out beautifully without harsh root lines. It's ideal for those seeking a low-maintenance yet sophisticated sun-kissed look.\n\nTraditional foil highlights, however, provide precise, uniform color placement and are perfect for achieving maximum brightness or dramatic contrast. Whichever technique you choose, incorporating Olaplex treatments during the process is non-negotiable to maintain the structural integrity of your hair."
   },
   {
+    slug: "holistic-aromatherapy-scalp-massages",
+    author: "Aria Montgomery",
     img: IMG.journal4,
     tag: "Spa Rituals",
     date: "March 30, 2026",
     title: "Holistic Aromatherapy: Why Scalp Massages Rebuild More Than Strands",
     text: "Explore the ancient, restorative sciences behind our premium organic rose-milk and herbal body polish rituals.",
+    content: "A scalp massage is far more than a relaxing add-on at the shampoo bowl; it is a vital holistic therapy.\n\nUsing targeted pressure points and botanical aromatherapy oils, a proper scalp massage stimulates blood circulation, delivering essential oxygen and nutrients directly to the hair follicles. This not only promotes healthier, thicker hair growth but also profoundly reduces stress and tension held in the cranial muscles.\n\nRegular scalp therapies can alleviate headaches, improve sleep quality, and leave you feeling centered and rejuvenated. It is the ultimate fusion of aesthetic care and total wellness."
   },
 ];
 

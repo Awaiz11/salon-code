@@ -1,8 +1,40 @@
+import { useState } from "react";
 import { PageHero, SectionHead, Stars } from "../components/shared";
 import { IconCheck } from "../components/icons";
 import { IMG } from "../data";
 
 export default function Bridal() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    date: "",
+    pkg: "",
+    requests: "",
+  });
+  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
+  const [submittedName, setSubmittedName] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.name.trim() || !formData.phone.trim() || !formData.date.trim()) {
+      return; // Handled by native required attributes
+    }
+    
+    setStatus("submitting");
+    
+    // Simulate API/EmailJS call
+    setTimeout(() => {
+      setSubmittedName(formData.name);
+      setStatus("success");
+      setFormData({ name: "", phone: "", date: "", pkg: "", requests: "" });
+      
+      // Auto-reset back to form after 6 seconds
+      setTimeout(() => {
+        setStatus("idle");
+      }, 6000);
+    }, 1500);
+  };
+
   return (
     <>
       <PageHero
@@ -116,40 +148,117 @@ export default function Bridal() {
             <p className="mt-2 text-[13.5px] text-body">
               Let us customize your grand beauty vision. Register your priority slot today.
             </p>
-            <form className="mt-7 grid gap-5 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
-              <div>
-                <label className="mb-1.5 block text-[12px] font-semibold text-ink">Full Name</label>
-                <input className="input-luxe" placeholder="Enter name" />
+            {status === "success" ? (
+              <div
+                role="alert"
+                className="mt-7 flex flex-col items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-50/50 p-8 text-center sm:p-10"
+              >
+                <div className="grid h-12 w-12 place-items-center rounded-full bg-emerald-100 text-emerald-600">
+                  <IconCheck className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <h3 className="font-serif mt-4 text-xl font-bold text-ink">Inquiry Received</h3>
+                <p className="mt-2 text-[13.5px] leading-relaxed text-body">
+                  Thank you, <strong className="text-ink">{submittedName}</strong>! Your bridal inquiry has been securely submitted. Our coordination team will contact you shortly to confirm your consultation.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setStatus("idle")}
+                  className="btn-line mt-6 !py-2.5"
+                >
+                  Submit Another Request
+                </button>
               </div>
-              <div>
-                <label className="mb-1.5 block text-[12px] font-semibold text-ink">Phone Number</label>
-                <input className="input-luxe" placeholder="+1 (310) 555-0199" />
-              </div>
-              <div>
-                <label className="mb-1.5 block text-[12px] font-semibold text-ink">Wedding Date</label>
-                <input className="input-luxe" placeholder="MM / DD / YYYY" />
-              </div>
-              <div>
-                <label className="mb-1.5 block text-[12px] font-semibold text-ink">Package Preference</label>
-                <select className="input-luxe appearance-none">
-                  <option> Select Package</option>
-                  <option>Glow Package</option>
-                  <option>Luxe Package</option>
-                  <option>Elite Package</option>
-                </select>
-              </div>
-              <div className="sm:col-span-2">
-                <label className="mb-1.5 block text-[12px] font-semibold text-ink">
-                  Special Requests or Hair/Skin Concerns
-                </label>
-                <textarea
-                  rows={4}
-                  className="input-luxe resize-none"
-                  placeholder="Describe your veil preferences, dress neckline, wedding theme, or special requests…"
-                />
-              </div>
-              <button type="submit" className="btn-gold w-full !py-4 sm:col-span-2">Submit Secure Request</button>
-            </form>
+            ) : (
+              <form className="mt-7 grid gap-5 sm:grid-cols-2" onSubmit={handleSubmit} aria-label="Bridal inquiry form">
+                <div>
+                  <label htmlFor="inquiry-name" className="mb-1.5 block text-[12px] font-semibold text-ink">
+                    Full Name <span className="text-red-500" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    id="inquiry-name"
+                    required
+                    aria-required="true"
+                    className="input-luxe"
+                    placeholder="Enter name"
+                    autoComplete="name"
+                    value={formData.name}
+                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                    disabled={status === "submitting"}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="inquiry-phone" className="mb-1.5 block text-[12px] font-semibold text-ink">
+                    Phone Number <span className="text-red-500" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    id="inquiry-phone"
+                    required
+                    aria-required="true"
+                    type="tel"
+                    className="input-luxe"
+                    placeholder="+1 (310) 555-0199"
+                    autoComplete="tel"
+                    value={formData.phone}
+                    onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                    disabled={status === "submitting"}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="inquiry-date" className="mb-1.5 block text-[12px] font-semibold text-ink">
+                    Wedding Date <span className="text-red-500" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    id="inquiry-date"
+                    required
+                    aria-required="true"
+                    type="date"
+                    className="input-luxe min-h-[44px]"
+                    value={formData.date}
+                    onChange={(e) => setFormData(prev => ({ ...prev, date: e.target.value }))}
+                    disabled={status === "submitting"}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="inquiry-pkg" className="mb-1.5 block text-[12px] font-semibold text-ink">
+                    Package Preference
+                  </label>
+                  <select
+                    id="inquiry-pkg"
+                    className="input-luxe min-h-[44px] appearance-none"
+                    value={formData.pkg}
+                    onChange={(e) => setFormData(prev => ({ ...prev, pkg: e.target.value }))}
+                    disabled={status === "submitting"}
+                  >
+                    <option value="">Select Package</option>
+                    <option value="Glow Package">Glow Package</option>
+                    <option value="Luxe Package">Luxe Package</option>
+                    <option value="Elite Package">Elite Package</option>
+                  </select>
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="inquiry-reqs" className="mb-1.5 block text-[12px] font-semibold text-ink">
+                    Special Requests or Hair/Skin Concerns
+                  </label>
+                  <textarea
+                    id="inquiry-reqs"
+                    rows={4}
+                    className="input-luxe resize-none"
+                    placeholder="Describe your veil preferences, dress neckline, wedding theme, or special requests…"
+                    value={formData.requests}
+                    onChange={(e) => setFormData(prev => ({ ...prev, requests: e.target.value }))}
+                    disabled={status === "submitting"}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={status === "submitting"}
+                  aria-disabled={status === "submitting"}
+                  className="btn-gold w-full !py-4 transition-all disabled:cursor-not-allowed disabled:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:col-span-2"
+                >
+                  {status === "submitting" ? "Submitting..." : "Submit Secure Request"}
+                </button>
+              </form>
+            )}
           </div>
           <div className="overflow-hidden rounded-xl shadow-[0_25px_60px_-28px_rgba(43,33,40,0.55)]">
             <img src={IMG.bridalFabric} alt="Bridal styling" className="h-full min-h-[380px] w-full object-cover" />

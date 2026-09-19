@@ -88,7 +88,7 @@ export default function Journal() {
                   <h3 className="font-serif mt-4 text-xl font-bold leading-snug text-ink">{a.title}</h3>
                   <p className="mt-3 text-[13px] leading-relaxed text-body">{a.text}</p>
                   <a
-                    href="#/journal"
+                    href={`#/journal/${a.slug}`}
                     className="mt-4 inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-golddark hover:text-gold"
                   >
                     Read Full Article <IconArrowR className="h-3.5 w-3.5" />

@@ -17,8 +17,11 @@
   --color-mist: #a9a093;
 }
 
+/* ─── base reset ─────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
+  /* prevent horizontal overflow site-wide */
+  overflow-x: hidden;
 }
 
 body {
@@ -27,9 +30,46 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  /* prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
-/* ---------- component classes ---------- */
+/* ─── global touch & focus ───────────────────────────────── */
+/* Remove 300ms tap delay on all interactive elements */
+a,
+button,
+[role="button"],
+input,
+select,
+textarea,
+label {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Universal focus-visible ring — WCAG 2.4.11 */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Remove outline for mouse users only */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ─── minimum 44×44px touch targets (iOS/Android HIG) ───── */
+button,
+[role="button"],
+[role="tab"],
+[role="radio"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* ─── component classes ───────────────────────────────────── */
 
 .eyebrow {
   font-size: 11px;
@@ -39,6 +79,7 @@ body {
   color: var(--color-gold);
 }
 
+/* Gold primary button */
 .btn-gold {
   display: inline-flex;
   align-items: center;
@@ -48,23 +89,38 @@ body {
   color: var(--color-ink);
   border-radius: 6px;
   padding: 13px 26px;
+  min-height: 44px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   white-space: nowrap;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn-gold:hover {
   background: var(--color-golddark);
   color: #fff;
 }
+.btn-gold:active {
+  transform: scale(0.95);
+  transition: transform 75ms ease;
+  background: var(--color-golddark);
+  color: #fff;
+}
+.btn-gold:focus-visible {
+  outline: 2px solid var(--color-golddark);
+  outline-offset: 3px;
+}
 .btn-gold:disabled {
-  opacity: 0.5;
+  opacity: 0.45;
   cursor: not-allowed;
+  transform: none;
 }
 
+/* Outlined gold button */
 .btn-line {
   display: inline-flex;
   align-items: center;
@@ -75,19 +131,31 @@ body {
   color: var(--color-golddark);
   border-radius: 6px;
   padding: 13px 26px;
+  min-height: 44px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
   cursor: pointer;
   white-space: nowrap;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn-line:hover {
   background: var(--color-gold);
   color: var(--color-ink);
 }
+.btn-line:active {
+  transform: scale(0.95);
+  transition: transform 75ms ease;
+}
+.btn-line:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
 
+/* Light outlined button (on dark backgrounds) */
 .btn-line-light {
   display: inline-flex;
   align-items: center;
@@ -98,28 +166,42 @@ body {
   color: #fff;
   border-radius: 6px;
   padding: 13px 26px;
+  min-height: 44px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
   cursor: pointer;
   white-space: nowrap;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn-line-light:hover {
   border-color: var(--color-gold);
   color: var(--color-gold);
 }
+.btn-line-light:active {
+  transform: scale(0.95);
+  transition: transform 75ms ease;
+}
+.btn-line-light:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 3px;
+}
 
+/* Luxe text input / textarea */
 .input-luxe {
   width: 100%;
   background: var(--color-cream);
   border: 1px solid var(--color-line);
   border-radius: 8px;
-  padding: 12px 14px;
+  padding: 13px 14px;
+  min-height: 44px;
   font-size: 14px;
   color: var(--color-ink);
   font-family: var(--font-sans);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .input-luxe::placeholder {
   color: var(--color-mist);
@@ -127,12 +209,31 @@ body {
 .input-luxe:focus {
   outline: none;
   border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(195, 160, 95, 0.18);
 }
 
+/* ─── skeleton loader ────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-line) 25%,
+    var(--color-cream2) 50%,
+    var(--color-line) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ─── scrollbar suppression ──────────────────────────────── */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   scrollbar-width: none;
 }
-
